@@ -1,0 +1,18 @@
+.container{
+    margin-top: 4%;
+}
+
+button{
+    margin-top: 70%;
+    width: 90%;
+    height: 30%;
+    border-radius: 25%;
+}
+
+img{
+    border-radius: 05%;
+    margin-top: 5%;
+}
+h1{
+    color: white;
+}
