@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { HiringFormComponent } from './hiring-form/hiring-form.component';
 import { WorkerFormComponent } from './worker-form/worker-form.component';
 import { JobListingFormComponent } from './job-listing-form/job-listing-form.component';
+import { JobListingComponent } from './job-listing/job-listing.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { JobListingFormComponent } from './job-listing-form/job-listing-form.com
     AboutComponent,
     HiringFormComponent,
     WorkerFormComponent,
-    JobListingFormComponent
+    JobListingFormComponent,
+    JobListingComponent
   ],
   imports: [
     BrowserModule,
