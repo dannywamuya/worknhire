@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "worknhire"
+    }
+  },
+  "defaultProject": "worknhire",
+  "cli": {
+    "analytics": "3873b8d1-ecf9-47ee-827b-cd60bc9a5017"
+  }
 }

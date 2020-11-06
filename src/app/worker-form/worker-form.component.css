@@ -1,0 +1,15 @@
+.container{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.worker-form{
+    height: 100vh;
+}
+.form-heading{
+    text-align: center;
+}
+.form{
+    align-content: center;
+}
