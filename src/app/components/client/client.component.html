@@ -1,0 +1,20 @@
+<div style="text-align: center; margin-top: 2%;">
+<h4><strong>Clients</strong></h4>
+
+<div class="repos-class" style="margin-top: 2%;" >
+<div class="repo-card container">
+    <div class="grid">
+        <div *ngFor='let client of clients'>
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header"><strong><a href="/clients/{{ client.id }}" style="text-decoration: none;">{{ client.name }}</a></strong></div>
+            <div class="card-body">
+                <p class="card-title"><strong>ID:</strong> {{ client.id }}</p>
+                <p class="card-title"><strong>Email:</strong> {{ client.email }}</p>
+                <p class="card-text"><strong>Phone:</strong> {{ client.phone }}</p>
+            </div>
+            </div> 
+        </div> 
+    </div>
+</div>
+</div>
+</div> 

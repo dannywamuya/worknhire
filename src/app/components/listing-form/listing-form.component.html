@@ -1,0 +1,42 @@
+<!-- <div style="text-align: center;">
+    <h4><strong>New Listing</strong></h4>
+    <form #listingForm="ngForm" (ngSubmit)="postListing(listingForm.value)">
+    <div class="txt_field">
+        <label for="client_id">Client ID : </label>
+        <input id="client_id" name="client_id" type="number" ngModel placeholder="Enter your Client ID">
+    </div>
+    <br>
+    <div class="txt_field">
+        <label for="job_category">Job Category : </label>
+        <input id="job_category" name="job_category" type="text" ngModel placeholder="Enter the Job Category">
+    </div>
+    <br>
+    <div class="txt_field">
+        <label for="job_detail">Details : </label>
+        <input id="job_detail" name="job_detail" type="text" ngModel placeholder="Enter the Job Details">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-outline-success">Post</button>
+    <hr style="width: 30%; text-align: center;">
+    </form>
+</div>
+     -->
+
+<div style="margin-top: 7%; width: 80%;" class="container bg-dark" id="listing-form">
+    <h4 style="text-align: center;"><strong>New Listing</strong></h4>
+    <form style="margin-top: 3%;" #listingForm="ngForm" (ngSubmit)="postListing(listingForm.value)" name="clientForm">
+        <div class="form-group">
+            <label for="client_id">Client ID : </label>
+            <input id="client_id" class="form-control" name="client_id" type="number" ngModel placeholder="Enter your Client ID"> 
+        </div>
+        <div class="form-group">
+            <label for="job_category">Job Category : </label>
+            <input id="job_category" class="form-control" name="job_category" type="text" ngModel placeholder="Enter the Job Category">
+        </div>
+        <div class="form-group">
+            <label for="job_detail">Details</label>
+            <textarea id="job_detail" name="job_detail" type="text" class="form-control" rows="3" ngModel placeholder="Enter the Job Details"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Post</button>
+    </form>
+</div>

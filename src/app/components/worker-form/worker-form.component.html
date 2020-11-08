@@ -1,0 +1,27 @@
+<div style="margin-top: 7%; width: 80%;" class="container bg-dark" id="worker-form">
+    <h4 style="text-align: center;"><strong>New Worker</strong></h4>
+    <form style="margin-top: 3%;" #workerForm="ngForm" name="workerForm" (ngSubmit)="postWorker(workerForm.value)">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" ngModel placeholder="Enter name"> 
+        </div>
+        <div class="form-group">
+            <label for="skill">Profession</label>
+            <input id="skill" class="form-control" name="skill" type="text" ngModel placeholder="Enter your profession">
+        </div>
+        <div class="form-group">
+            <label for="experience">Experience</label>
+            <input id="experience" class="form-control" name="experience" type="number" ngModel placeholder="Enter your experience">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" ngModel aria-describedby="emailHelp" placeholder="Enter your phone number">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" class="form-control" name="phone" type="text" ngModel placeholder="Enter your phone number">
+        </div>
+        <button type="submit" class="btn btn-outline-success">Join</button>
+    </form>
+</div>

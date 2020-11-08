@@ -1,0 +1,24 @@
+.repos-class .repo-card .grid {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.repos-class{
+    font-size: 14px;
+}
+ 
+.repos-class .repo-card .grid img {
+    align-self: center;
+}
+
+.repo-title {
+    text-align: center;
+}
+
+.repos-class .repo-card .grid .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3%;
+    padding-bottom: 15px;
+} 

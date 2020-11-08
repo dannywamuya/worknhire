@@ -1,0 +1,13 @@
+<div class="container" style="margin-top: 2%;">
+    <h4 style="text-align: center; margin-bottom: 2%;"><strong>Listings</strong></h4>
+
+    <div *ngFor='let listing of listings'>
+        <div class="card" style="margin-bottom: 2%;">
+            <p class="card-header"><strong>{{ listing.id }} {{ listing.job_category }}</strong></p>
+            <div class="card-body">
+            <p class="card-text"><strong>Detail: </strong>{{ listing.job_detail }}</p>
+            <p class="card-text"><strong>Posted by: </strong>Client ID {{ listing.client_id }}</p>
+            </div>
+        </div>
+    </div>
+</div> 
