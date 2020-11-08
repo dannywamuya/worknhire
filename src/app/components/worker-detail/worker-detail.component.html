@@ -1,9 +1,22 @@
-<!-- <div style="text-align: center;">
-<h4><strong>Worker</strong></h4>
-<div>
-    <hr style="width: 30%; text-align: center;">
-    <p><strong>{{ worker.id }}. {{ worker.name }}</strong></p>
-    <p>Email Address : <strong> {{ worker.email }}</strong></p>
-    <p>Phone Number : <strong> {{ worker.phone }}</strong></p>
+<div style="text-align: center; margin: 3% 0;">
+    <h4><strong>Worker</strong></h4>
+    <hr style="text-align: center; margin: 3% 0">
+    <div class="card mb-3" style="max-width: 700px; margin-left: 20%;">
+        <div class="row no-gutters"> 
+        <div class="col-md-4">
+            <img src="../assets/images/avatar.jpg" class="card-img" alt="..." style="width: 200px;">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title"><strong>{{ worker.name }}</strong></h5>
+            <p class="card-text">Client ID : <strong> {{ worker.id }}</strong></p>
+            <p class="card-text">Skill : <strong> {{ worker.skill }}</strong></p>
+            <p class="card-text">Experience : <strong> {{ worker.experience }} years</strong></p>
+            <p class="card-text">Email Address : <strong> {{ worker.email }}</strong></p>
+            <p class="card-text">Phone Number : <strong> {{ worker.phone }}</strong></p>
+        </div>
+        </div>
+    </div>
+    </div>
 </div>
-</div> -->
+    

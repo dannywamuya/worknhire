@@ -6,7 +6,7 @@
         <div class="grid">
             <div *ngFor='let worker of workers'>
                 <div class="card bg-light mb-3" style="max-width: 18rem;">
-                <div class="card-header"><strong>{{ worker.name }}</strong></div>
+                <div class="card-header"><strong><a href="/workers/{{ worker.id}}">{{ worker.name }}</a></strong></div>
                 <div class="card-body">
                     <p class="card-title"><strong>Skill:</strong> {{ worker.skill }}</p>
                     <p class="card-text"><strong>Experience:</strong> {{ worker.experience }} years</p>
