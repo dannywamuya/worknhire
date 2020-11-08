@@ -17,10 +17,7 @@ export class WorkerDetailComponent implements OnInit {
 
   ngOnInit() {
   let id = parseInt(this.route.snapshot.paramMap.get('id'));
-  // return this.dataService.getWorker(id)
-  //   // .subscribe(data => this.worker = data);
-  // }
-  
+   
   return this.http.get<any>('https://worknhireapi.herokuapp.com/workers/' + id)
     .subscribe(data => {
         this.worker = data;
