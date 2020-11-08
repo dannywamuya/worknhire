@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Worker } from 'src/app/models/worker';
 import { DataService } from 'src/app/services/data.service';
@@ -11,11 +12,13 @@ export class WorkerComponent implements OnInit {
 
   workers: Worker[];
 
-  constructor(private dataService:DataService) { }
+  constructor(private dataService:DataService,private http: HttpClient) { }
 
   ngOnInit() {
-    // return this.dataService.getWorkers()
-    // .subscribe(data => this.workers = data);
+    return this.http.get<any>('https://worknhireapi.herokuapp.com/workers')
+    .subscribe(data => {
+        this.workers = data;
+    })
   }
 
 }
